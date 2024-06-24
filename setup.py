@@ -13,6 +13,10 @@ import os
 import shutil
 from distutils.command.clean import clean as Clean
 
+os.environ["CC"] = "icx -O3  -xCORE_AVX512  -qopt-zmm-usage=high   -qopenmp -fp-model fast=2 "
+os.environ["CXX"] = "icpx -O3 -xCORE_AVX512  -qopt-zmm-usage=high  -qopenmp -fp-model fast=2 "
+os.environ["FC"] = "ifx -O3 -xCORE_AVX512u  -qopt-zmm-usage=high -qopenmp -fp-model fast=2 "
+
 
 #==============================================================================
 DISTNAME = 'anuga'
