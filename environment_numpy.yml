@@ -1,0 +1,42 @@
+name: Anuga_oneapi   # Name of the virtual environment
+
+channels:
+  - defaults
+  - conda-forge  # Additional channel for more packages
+
+dependencies:
+  - python=3.10  # Specify the Python version
+
+  # List of packages with versions for conda
+  - gitpython
+  - future
+  - dill
+  - matplotlib
+  - netcdf4
+  - pytest
+  - pytz
+  - scipy
+  - setuptools
+  - wheel
+  - pip
+  - GDAL
+
+  # List of packages for pip
+  - pip:
+    - Cython==0.29.37
+    - pandas==2.1.0
+    - numpy==1.24.0
+    - pmw
+    - utm 
+    - meshpy 
+    - pymetis 
+    - pytriangle 
+    - tzdata 
+    - MeshPy 
+    - triangle 
+    - PyMetis 
+    - Pmw 
+    - utm 
+    - openpyxl
+    - pyproj
+    - affine
