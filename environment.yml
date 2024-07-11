@@ -32,3 +32,5 @@ dependencies:
     - tzdata
     - affine
     - pymetis
+    - pandas
+    - openpyxl
